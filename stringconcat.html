@@ -1,0 +1,28 @@
+<html>
+<head>
+<title>
+Day 7 Task Demo
+</title>
+</head>
+<body>
+<h1>STRING CONCATENATION  </h1>
+<form>
+Enter STRING1 : <input type="text" id ="s1" name="s1"/><br>
+Enter STRING2 : <input type="text" id="s2" name="s2"/><br>
+<input type="button" id="concat" onclick="concatenate(this.form)"  value ="concat"/><br>
+</form>
+<h3 id="result" ></h3>
+<script>
+function concatenate(form)
+{
+var string1 = form.s1.value;
+var string2 = form.s2.value;
+document.getElementById("result").innerHTML = string1.concat(string2);
+
+
+}
+</script>
+</body>
+</html>
+
+
